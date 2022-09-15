@@ -36,7 +36,7 @@ def get_book(name):
     return jsonify({"message":"book not found"})
 
 # create a book by using  POST 
-# Add book name by using any API testing tool i have used POSTMAN, 
+# Add book name by using any API testing tool i have used POSTMAN, download postman using https://dl.pstmn.io/download/latest/win64 
 @app.route("/book",methods=['POST']) #store some persistent data
 def create_book():
     body_data = request.get_json()
